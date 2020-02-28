@@ -1,5 +1,5 @@
 //
-//  GFTextField.swift
+//  GFUsernameTextField.swift
 //  GitHubFollowers
 //
 //  Created by Kelvin Reid on 2/20/20.
@@ -34,7 +34,7 @@ class GFUsernameTextField: UITextField {
         
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
-        
+        returnKeyType = .go
         placeholder = "Username"
     }
     
