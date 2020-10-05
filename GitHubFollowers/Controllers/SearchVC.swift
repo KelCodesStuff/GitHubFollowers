@@ -25,6 +25,11 @@ class SearchVC: UIViewController {
         setupUserNameTextField()
         setupCallToActionButton()
         dismissKeyboardTapGesture()
+        
+        logoImageView.accessibilityIdentifier = "homeLogo"
+        usernameTextField.accessibilityIdentifier = "usernameTextField"
+        callToActionButton.accessibilityIdentifier = "searchButton"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
