@@ -23,10 +23,28 @@ class GitHubFollowersUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testSearchWithGoKey() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        app.textFields["usernameTextField"].tap()
+        app.textFields["usernameTextField"].typeText("KelCodesStuff")
+        app.keyboards.buttons["go"].tap()
+
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testSearchWithGetButton() {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.textFields["usernameTextField"].tap()
+        app.textFields["usernameTextField"].typeText("KelCodesStuff")
+        
+        app.textFields["searchButton"].tap()
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
